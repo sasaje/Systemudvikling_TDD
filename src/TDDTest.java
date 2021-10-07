@@ -24,8 +24,8 @@ class TDDTest {
         int arrayOutput = arrayList.size();
         boolean result;
 
-        //if expectedOutput is bigger than 0 - pass
-        //if expectedOutput is smaller than 0 - fail
+        //if arrayOutput is bigger than 0 - pass
+        //if arrayOutput is smaller than 0 - fail
         if(arrayOutput==0) {
             result=false;
         }else{
