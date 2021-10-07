@@ -56,10 +56,10 @@ class TDDTest {
     @Test
     public void doesMovieHasATitle() {
         Movie movie = new Movie();
-        movie.getName();
+        movie.setName("James Bond");
 
         boolean expectedOutput = true;
 
-        assertTrue(expectedOutput, movie.getName);
+        assertTrue(expectedOutput, movie.getName());
     }
 }
