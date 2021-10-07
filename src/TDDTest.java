@@ -51,4 +51,15 @@ class TDDTest {
 
         assertEquals(true, result);
     }
+
+    //TESTCASE 3
+    @Test
+    public void doesMovieHasATitle() {
+        Movie movie = new Movie();
+        movie.getName();
+
+        boolean expectedOutput = true;
+
+        assertTrue(expectedOutput, movie.getName);
+    }
 }
