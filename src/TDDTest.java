@@ -24,9 +24,26 @@ class TDDTest {
         int arrayOutput = arrayList.size();
         boolean result;
 
-        //if arrayOutput is bigger than 0 - pass
-        //if arrayOutput is smaller than 0 - fail
         if(arrayOutput==0) {
+            result=false;
+        }else{
+            result=true;
+        }
+
+        assertEquals(true, result);
+    }
+
+    //TESTCASE 2
+    @Test
+    public void doesMultipleMovieExist() {
+        Movie movie = new Movie();
+        ArrayList<Movie> arrayList = new ArrayList<Movie>();
+        arrayList.add(movie);
+
+        int arrayOutput = arrayList.size();
+        boolean result;
+
+        if(arrayOutput>1) {
             result=false;
         }else{
             result=true;
